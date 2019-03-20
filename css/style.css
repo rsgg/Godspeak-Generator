@@ -46,6 +46,10 @@ h2.elegant {
   color: black;
 }
 
+grey-text {
+  text-color: lightgrey;
+}
+
 p {
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
