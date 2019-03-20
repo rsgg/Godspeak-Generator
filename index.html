@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Terry A. Davis: Tribute Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700" rel="stylesheet"> 
+
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Terry A. Davis: God Songs</title>
+</head>
+
+<body>
+  <div class="jumbotron hero-gradient">
+    <h1 class="display-1 elegant">Terry A. Davis</h1>
+    <h1 class="display-1 elegant"><i>Godspeak Generator</i></h1>
+    <hr class="my-4">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Terry_Davis_1997.jpg" alt="Terry portrait" class="rounded img-fluid" style="max-height:400px">
+    <p style="padding-top: 10px;">Terrence Andrew Davis (December 15, 1969 – August 11, 2018) was an American programmer who created and designed the operating system TempleOS alone. It was a highly complex and unusual undertaking for one person, as the project extended to building
+      core components such as programming language, editor, compiler and kernel virtually from scratch. Davis also posted video blogs to social media, and by the time of his death, had amassed a small online following. He often referred to himself as "the smartest programmer that's ever lived". <i>From <a href="https://en.wikipedia.org/wiki/Terry_A._Davis">Wikipedia</a>.</i></p>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h2 class="elegant">What is Godspeak?</h2>
+        <p>Contained in Terry's TempleOS masterpiece were various random text generators. Terry believed that by generating this text one could "speak to God". Through making random associations in the text, much like a Rorschach ink-blot test. It is interesting to note that Rorschach initially developed his ink-blot test to serve as a diagnostic tool for schizophrenics - the very condition that likely affected Terry.</p>
+      </div>
+      <div class="col-md-8">
+        <h2 class="elegant">Original Code</h2>
+        <p>I adapted Terry's code from an original Bash script that I found of his online. The script would generate "random" text from a text-file that contained 712 words, ostensibly of Terry's choosing. The original Bash script is as follows:</p>
+        <samp style="background-color: lightgrey;">#!/bin/bash <br>
+          #This prints random words.<br>
+          echo "$(gshuf -n 32 ./Happy.TXT --random-source=/dev/urandom | tr '\n' ' ')"</samp>
+        <p>I reproduced the code in JavaScript so you can generate your own below, directly on this page. Please note that some of the words may be offensive - I am merely using Terry's original wordlist and thus cannot be held responsible for any of the views expounded by God in the generated text. The only modification that has been made to Terry's text is the replacement of underscores with spaces.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col align-self-center">
+        <h2 class="elegant">Speak to God</h2>
+          <p id="godSpeakDisplay">God will speak here.</p>
+        <button onclick="godSpeak()" class="btn btn-success">Listen</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<!-- https://upload.wikimedia.org/wikipedia/commons/8/8a/Terry_A._Davis_in_1985.jpg -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

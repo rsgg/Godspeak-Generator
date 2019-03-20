@@ -1,0 +1,98 @@
+.hero-gradient {
+  background-image: linear-gradient(30deg, aqua, khaki);
+  width: auto\9; 
+  height: auto;
+  max-width: 100%; /* Auto scale */
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+.body-gradient {
+  background-image: linear-gradient(30deg, aqua, khaki);
+  width: auto\9; 
+  height: auto;
+  max-width: 100%; /* Auto scale */
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+.img-title {
+  position: absolute;
+  color: #fff;
+  text-align: left;
+  left: 5%;
+  right: 0;
+  top: 5%;
+}
+
+h1.elegant {
+  font-family: 'Old Standard TT', serif;
+  font-size: 4em;
+  color: black;
+}
+
+.btn {
+  font-family: 'Raleway', sans-serif;
+}
+
+h2.elegant {
+  font-family: 'Old Standard TT', serif;
+  font-style: italic;
+  text-decoration-skip-ink: auto;
+  text-decoration: underline;
+  font-size: 2em;
+  color: black;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  color: black;
+}
+
+.dimmed{
+  filter: brightness(30%);
+}
+
+.center-cropped {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 10px;
+  object-fit: cover;
+  object-position: center right;
+  box-shadow: 2px 2px 5px #000
+}
+
+.profile-image {
+  width: 100px;
+}
+
+.spacer {
+  width: 100vw;
+  height: 50px;
+}
+
+html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: .7rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: .8rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+      font-size: 1.rem;
+  }
+}
